@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aristide's website</title>
+    <link rel="stylesheet" href="styling.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adding some transparency to the navbar */
+            z-index: 1000; /* Ensure navbar is on top */
+        }
+
+        .logo {
+            color: white;
+            margin: 0;
+            padding: 10px 20px;
+            font-size: 24px;
+            float: left;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Adding some transparency to the hover effect */
+        }
+
+        .content-items {
+            position: relative;
+            height: 100vh; /* Ensure content-items takes up the full height of the viewport */
+            overflow: hidden; /* Hide overflow to prevent scrolling */
+        }
+
+        .content-items img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill; /* Ensure the image covers the entire container */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1; /* Ensure the image is behind the table */
+        }
+
+        table {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Ensure the table is in front of the image */
+            background-color: rgba(255, 255, 255, 0.5); /* Adding some transparency to the table background */
+            border-collapse: collapse;
+            width: 60%;
+            height: 60%;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>MY WEBSITE</p>
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Table.html">Table</a></li>
+            <li><a href="Forms.html">Forms</a></li>
+            <li><a href="MYBooks.html">MYBooks</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content-items">
+            <img src="Images/pexels-rompalli-harish-1698618.jpg" alt="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IRAGUHA</td>
+                        <td>Aristide</td>
+                        <td>0782979568</td>
+                        <td>Data 4</td>
+                        <td>Data 5</td>
+                    </tr>
+                    <tr>
+                        <td>KAGABO</td>
+                        <td>Methode</td>
+                        <td>0782979566</td>
+                        <td>Data 9</td>
+                        <td>Data 10</td>
+                    </tr>
+                    <tr>
+                        <td>SHEMA</td>
+                        <td>Patrick</td>
+                        <td>0782979565</td>
+                        <td>Data 14</td>
+                        <td>Data 15</td>
+                    </tr>
+                    <tr>
+                        <td>IRADUKUNDA</td>
+                        <td>Ange</td>
+                        <td>0782979000</td>
+                        <td>Data 19</td>
+                        <td>Data 20</td>
+                    </tr>
+                    <tr>
+                        <td>ISINGINZWE</td>
+                        <td>Gloria</td>
+                        <td>0782979512</td>
+                        <td>Data 24</td>
+                        <td>Data 25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

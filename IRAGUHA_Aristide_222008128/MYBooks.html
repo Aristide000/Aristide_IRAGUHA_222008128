@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aristide's website</title>
+    <link rel="stylesheet" href="styling.css">
+    <style>
+        .about-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            z-index: 1;
+        }
+        
+        .about-caption h1 {
+            font-size: 90px;
+            margin-bottom: 20px;
+            text-align: inherit;
+            color: rgb(209, 236, 233);
+        }
+        
+        .about-caption p {
+            font-size: 30px;
+            line-height: 1.6;
+        }
+        
+        /* Added CSS for positioning the download button and increasing its size */
+        .download-button {
+            position: absolute;
+            top: calc(50% + 70px); /* Adjust this value according to your design */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            padding: 60px;
+        }
+
+        .download-button button {
+            width: 200px; /* Increased by 50 pixels */
+            height: 50px; /* Increased by 50 pixels */
+            font-size: 18px;
+            background-color: #036c60;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <p>MY WEBSITE</p>
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+            <li><a href="Table.html">Table</a></li>
+            <li><a href="Forms.html">Forms</a></li>
+            <li><a href="MYBooks.html">MYBooks</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content-items">
+            <img src="Images/pexels-rompalli-harish-1698618.jpg" alt="">
+        </div>
+        
+        <!-- Download button for the Word document -->
+        <div class="download-button">
+            <a href="path/to/your/document.docx" download="IRAGUHA Aristide 222008128 (1).docx">
+                <button>Click here to download the document</button>
+
+                <a href="https://docs.google.com/document/d/1dZPPc9gnrnOW9XzCG9wui-1eYSVkuyBw/edit?usp=drive_link&ouid=116013509542497222711&rtpof=true&sd=true" class="download-button">Download My Document</a>
+            <!-- Caption -->
+            <p class="caption">Or click to the link below</p>
+            </a>
+        </div>
+    </main>
+</body>
+</html>
